@@ -1,0 +1,6 @@
+RPA Settlement Maturity Impor SKBDN [DATE] PT IM7 Tidak Ditemukan---
+Dear all,<br><br>
+PT IM7 untuk transaksi No. Ref [NO_REFF] dan Sequence [SEQ] dengan Oblg Code [OBLIG_CODE] <b>tidak ditemukan</b>. Harap diperiksa kembali.<br><br>
+Terima kasih.<br><br>
+Regards,<br>
+<b>ROBOT</b>

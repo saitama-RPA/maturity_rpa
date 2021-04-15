@@ -1,0 +1,7 @@
+Notifikasi Transaksi Settlement Maturity Impor---
+Dear all,<br><br>
+Pada transaksi [NO_REFF] dengan Oblig. Code [OBLIG_CODE] terdapat beberapa hal sebagai berikut:<br>
+[NOTES]<br><br>
+Mohon diperiksa kembali. Terima kasih.<br><br>
+Regards,<br>
+<b>ROBOT</b>
