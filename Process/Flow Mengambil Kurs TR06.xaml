@@ -1,11 +1,11 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Flow_Mengambil_Kurs_TR06" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uit="http://schemas.uipath.com/workflow/activities/terminal" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_folderDoneKurs" Type="InArgument(x:String)" />
+    <x:Property Name="in_pathKurs" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>904,647</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>864,1383</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Flow_Mengambil_Kurs_TR06_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="56">
@@ -73,7 +73,7 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Flow_Mengambil_Kurs_TR06" sap:VirtualizedContainerService.HintSize="476,342" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Flow_Mengambil_Kurs_TR06" sap:VirtualizedContainerService.HintSize="476,1178" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -116,7 +116,7 @@
                 <InArgument x:TypeArguments="x:String">[terminal_kurs.Replace("*","")]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:WriteTextFile DisplayName="Write Text File" FileName="[in_folderDoneKurs+&quot;Kurs &quot;+Now.ToString(&quot;yyyyMMdd&quot;).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[terminal_kurs]" />
+            <ui:WriteTextFile DisplayName="Write Text File" FileName="[in_pathKurs]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[terminal_kurs]" />
           </Sequence>
         </ActivityAction>
       </uit:TerminalSession.Body>
